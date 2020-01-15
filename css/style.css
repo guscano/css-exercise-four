@@ -1,4 +1,119 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  width: 100%;
+  height: 100%;
+  font: helvetica, sans-serif, arial;
 }
+h1 {
+  /*margin: 0 auto;*/
+  font-size: 1.5em;
+  padding-left: 30%;
+  margin-bottom: 30px;
+}
+
+.container {
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*font-size: 2em;*/
+  width: 100%;
+  max-width: 1100px;
+  height: 200px;
+  /*display: inline-flex;*/
+  padding-top: 10%;
+  margin: 0px auto;
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  display: inline-block;
+  /* float: left; */
+  /*margin-bottom: 20px;*/
+}
+
+.baku {
+  margin: 10% 15px 0px 0px;
+  background-image: url("../images/baku.jpg");
+  width: 320px;
+  height: 200px;
+  /*margin-bottom: 15px;*/
+  /*float: center;*/
+
+}
+
+.london {
+  background-image: url("../images/london.png");
+  margin: 10% 15px 0px 0px;
+  width: 320px;
+  height: 200px;
+  /*margin-bottom: 15px;*/
+  /*display: flex;*/
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg");
+  margin: 10% 15px 0px 0px;
+  width: 320px;
+  height: 200px;
+  /*width: 100%;
+  height: 100%;*/
+  /*margin-bottom: 15px;*/
+  /*display: flex;*/
+}
+
+.rome {
+  background-image: url("../images/rome.jpg");
+  margin: 10% 15px 30px 0px;
+  width: 320px;
+  height: 200px;
+  /*padding-top: 15px;
+  display: flex;*/
+}
+
+.preview h1{
+  font-size: 2.5em;
+  /*padding: 5%;*/
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+
+@media (min-with: 769px) and (max-width: 1200px) {
+  .preview {
+    /*display: flex;*/
+    width: 5%;
+    height: 5%;
+    /*flex-direction: column;
+    justify-content: center;*/
+
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .preview  {
+    /*display: flex;*/
+    width: 50%;
+    height: 50%;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+
+  }
+}
+
+  /*@media (min-with: 769px) and (max-width: 1200px) {
+  .preview {
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+  }
+}*/
